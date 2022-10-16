@@ -1,0 +1,15 @@
+
+
+.root{ -fx-background-color: #222; -fx-background-radius: 29; }
+.mainPane{
+    -fx-background-color: linear-gradient(to bottom right, tomato, darkviolet);
+    -fx-background-radius: 15 15 25 25; }
+.buttonPane{ -fx-background-color: #0000002c; -fx-background-radius: 15; }
+.button1{ -fx-background-color: #B0380325; -fx-background-radius: 15; }
+.button1:hover{ -fx-background-color: #00e9fa7a; }
+.button2{ -fx-background-color: #B0380325; -fx-background-radius: 15; }
+.button2:hover{ -fx-background-color: #3afa009f; }
+.button3{ -fx-background-color: #B0380325; -fx-background-radius: 15; }
+.button3:hover{ -fx-background-color: #fa0000; }
+.button4{ -fx-background-color: #B0380325; -fx-background-radius: 15; }
+.button4:hover{ -fx-background-color: #fbff00; }

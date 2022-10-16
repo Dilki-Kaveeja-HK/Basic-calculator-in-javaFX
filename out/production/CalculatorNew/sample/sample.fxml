@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" styleClass="root" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane layoutX="5.0" layoutY="37.0" prefHeight="437.0" prefWidth="590.0" styleClass="mainPane" stylesheets="@Style.css">
+            <children>
+                <Pane fx:id="lblResult" layoutX="7.0" layoutY="164.0" prefHeight="70.0" prefWidth="577.0" styleClass="buttonPane" stylesheets="@Style.css">
+                    <children>
+                        <Label fx:id="results" alignment="CENTER" layoutX="-6.0" layoutY="8.0" prefHeight="55.0" prefWidth="584.0" text="0" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="32.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button layoutX="458.0" layoutY="339.0" mnemonicParsing="false" onAction="#Division" prefHeight="80.0" prefWidth="120.0" styleClass="button1" stylesheets="@Style.css" text="/" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="313.0" layoutY="339.0" mnemonicParsing="false" onAction="#Multiplication" prefHeight="80.0" prefWidth="120.0" styleClass="button1" stylesheets="@Style.css" text="*" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="165.0" layoutY="339.0" mnemonicParsing="false" onAction="#Subtraction" prefHeight="80.0" prefWidth="120.0" styleClass="button1" stylesheets="@Style.css" text="-" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="Addition" layoutX="17.0" layoutY="339.0" mnemonicParsing="false" onAction="#Addition" prefHeight="80.0" prefWidth="120.0" styleClass="button1" stylesheets="@Style.css" text="+" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="Clear" layoutX="107.0" layoutY="241.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="373.0" styleClass="button3" stylesheets="@Style.css" text="Clear" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="17.0" layoutY="287.0" mnemonicParsing="false" onAction="#Sin" prefHeight="40.0" prefWidth="120.0" styleClass="button4" stylesheets="@Style.css" text="sin">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="165.0" layoutY="287.0" mnemonicParsing="false" onAction="#Cos" prefHeight="40.0" prefWidth="120.0" styleClass="button4" stylesheets="@Style.css" text="cos">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="313.0" layoutY="287.0" mnemonicParsing="false" onAction="#Tan" prefHeight="40.0" prefWidth="120.0" styleClass="button4" stylesheets="@Style.css" text="tan">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="458.0" layoutY="287.0" mnemonicParsing="false" onAction="#Exponent" prefHeight="40.0" prefWidth="120.0" styleClass="button2" stylesheets="@Style.css" text="e^x">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <TextField fx:id="TFnumber1" alignment="CENTER" layoutX="7.0" layoutY="10.0" prefHeight="50.0" prefWidth="577.0" promptText="Input Number One" styleClass="buttonPane" stylesheets="@Style.css">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <effect>
+                        <ColorAdjust brightness="-0.33" contrast="1.0" />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+                </TextField>
+                <TextField fx:id="TFnumber2" alignment="CENTER" layoutX="7.0" layoutY="89.0" prefHeight="50.0" prefWidth="577.0" promptText="Input Number Two" styleClass="buttonPane" stylesheets="@Style.css">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <effect>
+                        <ColorAdjust brightness="-0.33" contrast="1.0" />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+                </TextField>
+                <Label alignment="CENTER" layoutX="9.0" layoutY="60.0" prefHeight="17.0" prefWidth="573.0" text="*Attention! , if you want sin, cos, tan OR e^x value please input number one only" textAlignment="CENTER" textFill="#4a4a4a">
+                    <font>
+                        <Font name="System Italic" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="titlePane" prefHeight="37.0" prefWidth="600.0">
+            <children>
+                <ImageView fx:id="btnClose" fitHeight="18.0" fitWidth="18.0" layoutX="553.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/cancel.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnMinimize" fitHeight="20.0" fitWidth="20.0" layoutX="528.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/minimize.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/cal4.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="51.0" layoutY="10.0" text="Calculator" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="125.0" layoutY="12.0" text="-  UWU/IIT/18/017" textFill="#8d8d8d">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
